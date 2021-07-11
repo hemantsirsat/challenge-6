@@ -84,7 +84,7 @@
 .errorimg {
   display: flex;
   position: absolute;
-  left:40%;
+  left:35%;
 }
 
 #hidden {
@@ -108,7 +108,7 @@
 .highlightederror {
   background-color: transparent;
   height: 3rem;
-  width: 50%;
+  width: 45%;
   border-radius: 4rem;
   padding-left: 1.5rem;
   border: 3px hsl(0,93%,68%) solid;
@@ -124,7 +124,6 @@
   margin-top: 0.4rem;
   margin-left: 1.5rem;
   font-weight: 500;
-
 }
 
 @media (max-width: 1000px ){    
@@ -145,7 +144,7 @@
 
 @media(max-width: 706px) {
   .errorimg {
-    left: 39%;
+    left: 33%;
   }
 }
 
