@@ -17,19 +17,12 @@ export default class Home extends React.Component {
   }
 
   checkmail=(mail)=>{
-    if(mail.length > 0){
-      if(mail.includes("@")){
-        this.setState({
-          hidden: true
-        })
-      }
-      else{
-        this.setState({
-          hidden: false
-        })
-      }
+    if(mail.includes("@")){
+      this.setState({
+        hidden: true
+      })
     }
-    if(mail.length === 0){
+    else{
       this.setState({
         hidden: false
       })
