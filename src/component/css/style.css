@@ -1,0 +1,283 @@
+.main {
+  display: flex;
+  width: 100%;
+  min-height: 100vh;
+}
+
+.leftsection {
+  position: absolute;
+  min-height: 100%;
+  background-image: linear-gradient(135deg, hsl(0,0%,100%), hsl(0,100%,98%));
+}
+
+.rightsection {
+  position: absolute;
+  width: 40%;
+  right:0;
+  min-height: 100%;
+}
+
+.desktophero {
+  object-fit: cover;
+}
+
+.mobilehero {
+  display: none;
+}
+
+.content {
+  width: 100%;
+  position: absolute;
+  top: 0;
+  margin-left: 6rem;
+  display: flex;
+  flex-direction: column;
+  margin-top: 3rem;
+}
+
+.mobilelogocontainer {
+  display: none;
+}
+
+.logo {
+  position: absolute;
+  width:9rem;
+  height: 2rem;
+}
+
+.heading {
+  font-size: 5.4ch;
+  line-height: 3.6rem;
+  font-weight: 300;
+  color: hsl(0,36%,70%);
+  margin-top: 4rem;
+}
+
+.comingsoon {
+  color: black;
+  font-weight: 600;
+}
+
+.description {
+  color: hsl(0,36%,70%);
+  width: 50%;
+  line-height: 1.5rem;
+  margin-top: -3rem;
+}
+
+.emailcontainer {
+  margin-top: 1rem;
+  display: flex;
+  align-items: center;
+}
+
+.email {
+  background-color: transparent;
+  height: 3rem;
+  width: 45%;
+  border-radius: 4rem;
+  border-color: rgb(231, 231, 231);
+  padding-left: 1.5rem;
+  border: 1px #DEDEDE solid;
+}
+
+.errorimg {
+  display: flex;
+  position: absolute;
+  left:40%;
+}
+
+#hidden {
+  display: none;
+}
+
+.submitbutton {
+  background-image: linear-gradient(135deg, hsl(0,80%,86%), hsl(0,74%,74%));
+  height: 3.5rem;
+  border-radius: 4rem;
+  width: 5.5rem;
+  border: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  left: 40%;
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.3);
+}
+
+.highlightederror {
+  background-color: transparent;
+  height: 3rem;
+  width: 50%;
+  border-radius: 4rem;
+  padding-left: 1.5rem;
+  border: 3px hsl(0,93%,68%) solid;
+}
+
+.submitbutton:hover {
+  cursor: pointer;
+}
+
+.validemail {
+  color: hsl(0,93%,68%);
+  font-size: 1.5ch;
+  margin-top: 0.4rem;
+  margin-left: 1.5rem;
+  font-weight: 500;
+
+}
+
+@media (max-width: 1000px ){    
+  .content {
+    margin-left: 4rem;
+  }  
+}
+
+@media( max-width: 968px) {
+  .leftsection {
+    width: 75%;
+  }
+
+  .rightsection {
+    width: 35%;
+  } 
+}
+
+@media(max-width: 706px) {
+  .errorimg {
+    left: 39%;
+  }
+}
+
+@media (max-width: 568px) {
+  .main {
+    display: flex;
+    width: 100%;
+    min-height: 100vh;
+    flex-direction: column;
+  }
+
+  .leftsection {
+    width: 100%;
+    top: 45%;
+  }
+
+  .rightsection {
+    width: 100%;
+  }
+
+  .leftsection img {
+    display: none;
+  }
+
+  .content {
+    margin-left: 0;
+    justify-content: center;
+    align-items: center;
+    margin-top: 3rem;
+    text-align: center;
+    top: 0;
+    margin-bottom: 5rem;
+  }
+
+  .description {
+    width: 90%;
+    text-align: center;
+  }
+
+  .logocontainer {
+    display: none;
+  }
+
+  .mobilelogocontainer {
+    display: flex;
+    margin-top: 1.5rem;
+    margin-left: 2rem;
+   }
+  
+  .emailcontainer {
+    margin-top: 1rem;
+    display: flex;
+    align-items: center;
+    width: 90%;
+  }
+      
+  .email {
+    width: 100%;
+  }
+  
+  .submitbutton {
+    left: 80%;
+  }
+
+  .submitbutton img {
+    display: flex;
+  }
+  
+  .errorimg {
+    display: flex;
+    position: absolute;
+    left:30%;
+  }
+
+  .highlightederror {
+    background-color: transparent;
+    height: 3rem;
+    width: 90%;
+    border-radius: 4rem;
+    padding-left: 1.5rem;
+    border-color: hsl(0,93%,68%);
+  }
+
+  .validemailcontainer {
+    display: flex;
+    width: 90%;
+  }
+
+  .validemail {
+    margin-left: 1.5rem;  
+  }
+
+  .desktophero {
+    display: none;
+  }
+
+  .mobilehero {
+    display: flex;
+    margin-top: 5rem;
+    width: 100%;
+  }
+}
+
+@media (max-width: 468px) {
+
+  .leftsection {
+    top: 35%;
+  }
+
+  .submitbutton {
+    left: 75%;
+  }
+}
+
+@media (max-width: 368px) {
+
+  .leftsection {
+    top: 30%;
+  }
+
+  .submitbutton {
+    left: 72%;
+  }
+}
+
+@media (max-width: 268px) {
+
+  .leftsection {
+    top: 20%;
+  }
+
+  .submitbutton {
+    left: 60%;
+  }
+}
